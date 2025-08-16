@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "hyperion_data_engine"
+version = "0.0.1"
+description = "a comprehensive data automation platform designed to extract, process, and analyze vast amounts of data from multiple online sources"
+authors = [
+  { name = "Rishi" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "==3.13.7"
+
+
+[tool.ruff]
+line-length = 99
+src = ["hyperion_data_engine"]
+include = ["pyproject.toml", "hyperion_data_engine/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["hyperion_data_engine"]
+force-sort-within-sections = true
+

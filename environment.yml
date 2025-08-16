@@ -1,0 +1,22 @@
+name: hyperion-data-engine
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13.7
+  - pip
+  - typer
+  - loguru
+  - tqdm
+  - ipython
+  - jupyterlab
+  - matplotlib
+  - notebook
+  - numpy
+  - pandas
+  - scikit-learn
+  - ruff
+  - pytest
+  - pip:
+    - python-dotenv
+    - mkdocs
+    - -e .
